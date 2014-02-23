@@ -1,0 +1,23 @@
+<Body:>
+  <div class="row">
+    <app:order:order>
+    <div class="span8 offset1">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {#each _page.items as :item}
+            <tr>
+              <td>{{:item.name}}</td>
+              <td>{{:item.price}}</td>
+              <td><button class="btn" x-bind="click: order.add">Add</button></td>
+            </tr>
+          {/}
+        </tbody>
+      </table>
+    </div>
+  </div>

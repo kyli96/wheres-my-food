@@ -1,0 +1,38 @@
+<import: src="./menu">
+<import: src="./checkout">
+<import: src="./order">
+
+
+<Header:>
+  <body class="{{dash($ns)}}">
+  <ui:connectionAlert>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="/">Yess101</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <!-- Other templates are included like HTML elements -->
+            <app:navLink title="Menu" href="/">
+            <app:navLink title="Checkout" href="/checkout">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+
+<Footer:>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <p>&copy; Yess101 2014</p>
+    </div>
+  </footer>
+
+<navLink:>
+  <li class="{{#if equal($url, @href)}}active{{/}}">
+    <a href="{{@href}}">{{@title}}</a>
+  </li>

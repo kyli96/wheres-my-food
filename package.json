@@ -1,0 +1,32 @@
+{
+  "name": "wheres-my-food",
+  "version": "0.0.0",
+  "description": "wheres-my-food ==============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyli96/wheres-my-food.git"
+  },
+  "author": "kyli96",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyli96/wheres-my-food/issues"
+  },
+  "homepage": "https://github.com/kyli96/wheres-my-food",
+  "dependencies": {
+    "logfmt": "^0.21.0",
+    "express": "^3.4.8",
+    "derby": "^0.5.x",
+    "redis": "~0.8.3",
+    "livedb-mongo": "~0.3.0",
+    "racer-browserchannel": "~0.1.0",
+    "connect-mongo": "~0.3.2",
+    "derby-ui-boot": "~0.1.2"
+  },
+  "engines": {
+    "node": "0.10.x"
+  }
+}

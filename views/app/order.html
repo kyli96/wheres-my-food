@@ -1,0 +1,26 @@
+<order:>
+      <div class="order">
+        <h3>Orders</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                </tr>
+            </thead>
+            <tbody>
+              {#each _page.order as :item}
+                <tr>
+                  <td>{{:item.name}}</td>
+                  <td>{{:item.price}}</td>
+                  <td>{{:item.qty}}</td>
+                  <td><button class="btn" x-bind="click: order.remove">Remove</button></td>
+                </tr>
+              {/}
+            </tbody>
+        </table>
+        <div>
+          <button class="btn">Checkout</button>
+        </div>
+      </div>
